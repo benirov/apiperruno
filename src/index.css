@@ -12,3 +12,283 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.poini
+{
+      position: initial!important;
+}
+
+/*colores of te app*/
+
+.color1
+{
+	color: #eeeeee!important
+}
+
+.color2
+{
+	color: #7971ea!important
+}
+
+.color3
+{
+	color: #393e46!important
+}
+.color4
+{
+	color: #222831!important
+}
+
+.colorwhite
+{
+	color: #FFF!important
+}
+
+
+/*bgColor*/
+
+.bgcolor1
+{
+	background-color: #eeeeee!important
+}
+
+.bgcolor2
+{
+	background-color: #7971ea!important
+}
+
+.bgcolor3
+{
+	background-color: #393e46!important
+}
+.bgcolor4
+{
+	background-color: #222831!important
+}
+
+.box-shadow
+{
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+/*firstsection*/
+
+.vhfirstsection
+{
+	height: 50vh!important;
+}
+
+/*secondsection*/
+
+.vhsecondtsection
+{
+	height: 50vh!important;
+}
+
+
+/*threetsection*/
+
+.vhthreetsection
+{
+	height: 50vh!important;
+}
+
+.width60
+{
+	width: 60%!important;
+}
+
+/*footer*/
+
+.footer
+{
+	height: 20vh!important;
+}
+
+/*fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Roboto&display=swap');
+
+
+.fontIndie
+{
+	font-family: 'Indie Flower', cursive!important;
+	font-size: 20px!important;
+}
+
+.fontBowlby
+{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 30px!important;
+}
+.fontSize15
+{
+	
+	font-size: 15px!important;
+}
+
+.fontIndieTitle
+{
+	font-family: 'Indie Flower', cursive!important;
+	font-size: 5rem!important;
+}
+
+/*image*/
+
+.InfoPage-bigAvatar-171 > img:hover
+{
+	width: 150px;
+	 -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+    cursor: pointer;
+}
+
+
+/*media querys */
+
+/*header*/
+
+
+@media  screen 
+and (max-width : 640px) {
+   .headermovil {
+       height: 295px!important;
+    }
+    .MainHeader-header-2
+    {
+    	height: auto!important;
+    }
+ 
+}
+
+/*first section*/
+
+@media  screen 
+and (max-width : 640px) {
+   .vhfirstsection {
+       height: 78vh!important;
+       justify-content: center!important;
+    }
+
+    .justifycenter
+    {
+    	justify-content: center!important;
+    }
+
+    
+ 
+}
+
+/*second section*/
+
+@media  screen 
+and (max-width : 640px) {
+   .vhsecondtsection {
+       height: 78vh!important;
+       justify-content: center!important;
+    }
+    .justifycenter
+    {
+    	justify-content: center!important;
+    }
+
+    
+ 
+}
+
+/*second section*/
+
+@media  screen 
+and (max-width : 640px) {
+   .vhthreetsection {
+       height: 78vh!important;
+       justify-content: center!important;
+    }
+
+    .justifycenter
+    {
+    	justify-content: center!important;
+    }
+
+    
+ 
+}
+
+/*utilities*/
+
+.MuiAvatar-root-4
+{
+  margin: auto;
+}
+
+.borderOutser
+{
+  border-bottom: 1px outset;
+}
+
+.required {
+    color: #a94442!important;
+}
+
+.required:after {
+    content: " *";
+}
+
+/* header */
+.MuiAppBar-colorPrimary-306
+{
+    background-color: #7971ea!important;
+
+}
+
+
+/* Sidenav */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #111; */
+    background-color: #eeeeee!important;
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #7971ea!important
+    
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #7971ea;
+    cursor:pointer;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
