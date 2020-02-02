@@ -8,7 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import TextField from '@material-ui/core/TextField';
 import Apiservices from '../Apiservices/login.js';
 import ToastContainer from './Toast';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './modal.css';
 
 const styles = theme => ({

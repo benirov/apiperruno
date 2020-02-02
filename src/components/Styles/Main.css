@@ -1,0 +1,93 @@
+.menu {
+    height: 60pt;
+    width: calc(100% - 30pt);
+    margin-top: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    padding-left: 10pt;
+    border-radius: 7pt;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0pt 0pt 30pt rgba(0,0,0,0.2);
+  }
+  .menu a {
+    margin-right: 12pt;
+    font-size: 13pt;
+    text-decoration: none;
+  }
+  .menu a:link, .menu a:visited {
+    color: #1c1c1c;
+  }
+  .about {
+    background-color: #ff5f5f;
+    color: #fff;
+    height: 400pt;
+    padding-top: 60pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-about {
+    width: 100%;
+    max-width: 600pt;
+    padding: 10pt;
+  }
+  .inner-about h1 {
+    margin: 0;
+    font-size: 35pt;
+    margin-bottom: -10pt;
+  }
+  .inner-about p {
+    margin: 0;
+    margin-bottom: 8pt;
+    font-size: 15pt;
+  }
+  .social {
+    margin-bottom: 0pt;
+  }
+  .social a {
+    margin-right: 5pt;
+  }
+  .social a:link, .social a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .blog {
+    padding: 10pt;
+    max-width: 600pt;
+    margin: 0 auto;
+  }
+  
+  .blog h1 {
+    margin: 0;
+  }
+  
+  .blog p {
+    margin: 0;
+    margin-bottom: 8pt;
+    font-size: 14pt;
+  }
+  
+  .blog .date {
+    margin: 0;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    opacity: 0.2;
+    font-size: 12pt;
+  }
+  
+  .post {
+    margin-top: 20pt;
+    padding-bottom: 20pt;
+    border-bottom: 1pt dashed #1c1c1c;
+  }
+  
+  .footer p {
+    text-align: center;
+    padding-bottom: 20pt;
+    opacity: 0.2;
+  }
