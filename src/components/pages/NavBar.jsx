@@ -9,13 +9,13 @@ class NavBar extends React.Component {
                 <div className="header">
                     <div className="container-fluid h-100 d-flex">
                         <div className="ml-auto">
-                            <img class="rounded-circle z-depth-2 imgprofile mx-auto d-block mt-1" alt="100x100" src="/img/logo.png"
+                            <img className="rounded-circle z-depth-2 imgprofile mx-auto d-block mt-1" alt="100x100" src="/img/logo.png"
                             data-holder-rendered="true" />
                         </div>
                     </div>
                 </div>
                     <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-                    <label for="openSidebarMenu" className="sidebarIconToggle">
+                    <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
                         <div className="spinner diagonal part-1"></div>
                         <div className="spinner horizontal"></div>
                         <div className="spinner diagonal part-2"></div>
@@ -29,17 +29,6 @@ class NavBar extends React.Component {
                         <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
                         <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
                     </ul>
-                </div>
-                <div id='center' className="main center">
-                    <div className="mainInner">
-                        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                    </div>
-                    <div className="mainInner">
-                        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                    </div>
-                    <div className="mainInner">
-                        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
-                    </div>
                 </div>
             </div>
 
