@@ -41,7 +41,7 @@ a{
 
 .webinar-card {
   margin: 10vh auto;
-  width: 50%;
+//   width: 50%;
   border-radius: 8px;
   box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
   transition: .6s ease;
@@ -130,7 +130,7 @@ ul {
 	font-family: 'Material Icons';
 	font-size: 1.2em;
 	padding-right: .5em;
-	vertical-align:middle;
+	vertical-align:super;
 }
 
 .info-date::before {
@@ -298,8 +298,8 @@ input:invalid {
 		width: 75%;
 	}
 	.header-img,.header-icon {
-		height: 200px;
-		line-height:200px;
+		height: 80px;
+		line-height:initial;
 		font-size: 2.5em;
 	}
 	.col-half {
@@ -320,8 +320,8 @@ input:invalid {
 		width: 95%;
 	}
 	.header-img,.header-icon {
-		height: 200px;
-		line-height:200px;
+		height: 80px;
+		line-height:initial;
 		font-size: 2.5em;
 	}
 	.hide-large {display:inline-block;}
@@ -388,8 +388,8 @@ body {
 }
 
 .imgFavoritos{
-  width: 25px;
-  margin-bottom: 8px;
+  width: 19px;
+//   margin-bottom: 8px;
 }
 
 .hederPorfileImg{
@@ -410,5 +410,23 @@ body {
   font-size: 7px;
   font-family: sans-serif;
   white-space: nowrap;
+}
+
+.parentDivs {
+    overflow-y: hidden; 
+  overflow-x: auto;
+  width: auto;
+  height: 256px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.parentDivs::-webkit-scrollbar { width: 0 !important }
+
+.childDivs{
+height: 600px!important;
+margin: 0 10px 0 0!important;
+padding: 0!important!important;
+display: inline-block!important;
 }
 
