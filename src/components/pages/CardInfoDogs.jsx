@@ -1,348 +1,175 @@
-import React from 'react';
-import '../Styles/CardInfoDogs.scss'; 
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import ChatIcon from '@material-ui/icons/Chat';
-import PetsIcon from '@material-ui/icons/Pets';
-import HomeIcon from '@material-ui/icons/Home';
-import PageviewIcon from '@material-ui/icons/Pageview';
+import React, { Fragment } from 'react';
+// import '../Styles/CardInfoDogs.scss'; 
+// import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+// import ChatIcon from '@material-ui/icons/Chat';
+// import PetsIcon from '@material-ui/icons/Pets';
+// import HomeIcon from '@material-ui/icons/Home';
+// import PageviewIcon from '@material-ui/icons/Pageview';
+import { MDBCard, MDBCardBody, MDBBtn, MDBIcon, MDBRow, MDBCol, MDBCardTitle, MDBCardText, MDBCardHeader, MDBContainer } from "mdbreact";
 
 class CardInfoDogs extends React.Component { 
 
     render(){
         return(
             <div>
-                
-<div className="row-fluid top30 pagetitle">
-  
-  <div className="container">
-    
-    <div className="row">
-    </div>
-    
-  </div>
-  
-  
-  
-</div>
-<div className="container">
-  
-  
-  
-  
-  
-  <div className="row">
-    <div className="col-md-4">
-      
-      <div id="demo" className="collapse in">
-        <hr />
-        <div className="list-group list-group">
-          <h4 className="">Category</h4>
-          <a href="#" className="list-group-item"><span className="badge">14</span> Active item <span className="label label-primary">New</span></a>
-          <a href="#" className="list-group-item"><span className="badge">3</span> Second item</a>	
-          <a href="#" className="list-group-item"><span className="badge">25</span> Third item</a>
-          <a href="#" className="list-group-item"><span className="badge">14</span> Active item</a>	
-          <a href="#" className="list-group-item"><span className="badge">3</span> Second item</a>
-          <a href="#" className="list-group-item"><span className="badge">25</span> Third item</a> 
-          <a href="#" className="list-group-item"><span className="badge">14</span> Active item</a>
-          <a href="#" className="list-group-item"><span className="badge">3</span> Second item</a>
-          
-          <div id="categories" className="collapse">
-            
-            <a href="#" className="list-group-item"><span className="badge">14</span> Active item</a>
-            <a href="#" className="list-group-item"><span className="badge">3</span> Second item</a>
-            <a href="#" className="list-group-item"><span className="badge">25</span> Third item</a> 
-            <a href="#" className="list-group-item"><span className="badge">14</span> Active item</a>
-            <a href="#" className="list-group-item"><span className="badge">3</span> Second item</a>
-          </div>
-          
-          
-          <button className="btn btn-default btn-sm btn-block" data-toggle="collapse" data-target="#categories">More <span className="caret"></span></button>
-          
-          <hr className="" />
-          <h4 className="">Viewing Options</h4>
-          <a href="#" className="list-group-item"><span className="badge">14</span> Upcoming Sessions</a>
-          
-          <a href="#" className="list-group-item"><span className="badge">3</span> OnDemand</a>
-          <hr className="" />	
-          <a href="#" className="list-group-item">Archived Courses</a>
-          <a href="#" className="list-group-item">Courses In Development</a>
-        </div>
-      </div>
-      
-      
-      
-      <div className="hidden-sm hidden-xs">
-        <div className="well rounded p-1">
-          
-          <h4>Ultimas Razas Agregadas</h4>
-          <hr/>
-          <button type="button" className="btn btn-primary m-1">
-            Pug <span className="badge badge-light">4 Mascotas</span>
-          </button>
-          {/* <br/> */}
+              <MDBContainer size="sm">
+              <div class="row">
+                <MDBCard  style={{ marginTop: "1rem" }}>
+                  <div className="row" style={{ marginTop: "1rem" }}>
+                      <div className="col-12 col-md-6" >
+                        <span style={{ margin: "1rem" }}> Ultimas mascotas agregadas segun tus gustos</span>
+                      </div>
+                      <div className="col-12 col-md-6 text-right" Style="padding-right: 22px; cursor:pointer;">
+                          <p className="badge badge-pill badge-primary"><strong> Ver Mas <i class="far fa-arrow-alt-circle-right"></i></strong></p>
+                      </div>
+                  </div>
+                  <MDBCardBody>
+                  <MDBRow>
+                    <MDBCol>
+                    <MDBCard>
+                    <div className="row" Style="margin-top: 5px;">
+                      <div className="col-3" Style="padding-left: 21px;">
+                        <div className="label">
+                          <img
+                            src="/img/sofia.jpg"
+                            alt=""
+                            className="rounded-circle z-depth-1-half"
+                            Style="height: 78px; width: 78px;"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-9">
+                        <a href="#!" className="name">
+                          Sofia Milagros
+                        </a>
+                        <br/>
+                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                        <div className="added-text">
+                          ¡ Tu Nueva Macota !
+                        </div>
+                        <div className="">
+                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    </MDBCard>
+                    </MDBCol>
+                    <MDBCol>
+                    <MDBCard>
+                    <div className="row" Style="margin-top: 5px;">
+                      <div className="col-3" Style="padding-left: 21px;">
+                        <div className="label">
+                          <img
+                            src="/img/sofia.jpg"
+                            alt=""
+                            className="rounded-circle z-depth-1-half"
+                            Style="height: 78px; width: 78px;"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-9">
+                        <a href="#!" className="name">
+                          Sofia Milagros
+                        </a>
+                        <br/>
+                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                        <div className="added-text">
+                          ¡ Tu Nueva Macota !
+                        </div>
+                        <div className="">
+                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    </MDBCard>
+                    </MDBCol>
+                    <MDBCol>
+                    <MDBCard>
+                    <div className="row" Style="margin-top: 5px;">
+                      <div className="col-3" Style="padding-left: 21px;">
+                        <div className="label">
+                          <img
+                            src="/img/sofia.jpg"
+                            alt=""
+                            className="rounded-circle z-depth-1-half"
+                            Style="height: 78px; width: 78px;"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-9">
+                        <a href="#!" className="name">
+                          Sofia Milagros
+                        </a>
+                        <br/>
+                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                        <div className="added-text">
+                          ¡ Tu Nueva Macota !
+                        </div>
+                        <div className="">
+                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
+                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    </MDBCard>
+                    </MDBCol>
+                  </MDBRow>
+                    
+                    {/* <MDBCardText>
+                      With supporting text below as a natural lead-in to additional
+                      content.
+                    </MDBCardText>
+                    <MDBBtn color="deep-orange">go somewhere</MDBBtn> */}
+                  </MDBCardBody>
+                </MDBCard>
+                </div>
+              </MDBContainer>
+              <MDBContainer size="sm">
+              <div className="row">
+                  <MDBCard  style={{ marginTop: "1rem" }} className="col-4">
+                  <div className="row" style={{ marginTop: "1rem" }}>
+                      <div className="col-12 col-md-8" >
+                        <span style={{ margin: "1rem" }}> Top Razas mas Visitadas</span>
+                      </div>
+                      <div className="col-12 col-md-4 text-right" Style="padding-right: 22px; cursor:pointer;">
+                          <p className="badge badge-pill badge-primary"><strong> Ver Mas <i className="far fa-arrow-alt-circle-right"></i></strong></p>
+                      </div>
+                  </div>
+                  <div className="row">
+                    <ul className="col-12">
+                        <li className="list-group-item">
+                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/icons8-pug-96.png" alt=""/> Pug&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;4 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
+                        </li>
+                        <li className="list-group-item">
+                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/raza2.png" alt=""/>Beauceron&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;34 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
+                        </li>
+                        <li className="list-group-item">
+                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/akita.jpg" alt=""/>Akita Japonés&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;43 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
+                        </li>
+                    </ul>
 
-          <button type="button" className="btn btn-primary m-1">
-        Beauceron <span className="badge badge-light">34 Mascotas</span>
-          </button>
-          {/* <br/> */}
-          <button type="button" className="btn btn-primary m-1">
-        Akita Japonés <span className="badge badge-light">43 Mascotas</span>
-          </button>
-          {/* <br/> */}
-          <button type="button" className="btn btn-primary m-1">
-            Ver mas...
-          </button>
-        </div>
-        
-        
-        
-        
-        {/* <div className="well">
-          
-          <h4>Course Catalog</h4>
-          <p><a href="#"><img src="http://placehold.it/400X500" className="img-responsive" /></a></p>
-          
-          <p>Everything you need to know about our webinars, including speaker bios, topics, and courses.</p>
-          
-          <button className="btn btn-sm btn-block btn-warning">Download</button>
-        </div> */}
-        
-        <hr/>
-        
-        {/* <h4 className="text-center">CPE Partners</h4>
-        
-        <p><a href="#"><img className="center-block" src="http://placehold.it/100X100" /></a></p> */}
-        
-        
-        
-      </div>
-      
-    </div>
-    <div className="col-md-8">
-      
-      
-      <div className="well hidden-xs"> 
-        
-        {/* <div className="row">
-          
-          <div className="col-xs-4">
-            
-            
-            <select className="form-control">
-              <option>Featured</option>
-              <option>Recently Added</option>
-              <option>Next Upcoming Session</option>
-              <option>A-Z</option>
-              <option>Z-A</option>
-            </select>
+                  </div>
+                  </MDBCard>
+                  <MDBCard  style={{ marginTop: "1rem" }} className="col-8">
+                    dcsdc
+                  </MDBCard>
+                </div>
+              </MDBContainer>
           </div>
-          <div className="col-xs-8">
-            <div className="btn-group pull-right">
-              <button type="button" className="btn btn-default"><span className="glyphicon glyphicon-th"></span></button>
-              <button type="button" className="btn btn-default active"><span className="glyphicon glyphicon-th-list"></span></button>
-              <button type="button" className="btn btn-default"><span className="glyphicon glyphicon-list"></span></button>
-              
-            </div>
-        </div>
-          
-        </div> */}
-        
-        
-        
-        
-        
-      </div>
-      
-      <br/>
-      <p> Ultimas mascotas agregadas segun tus gustos</p>
-      <hr />
-      
-      
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title  text-white">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p className="text-white">Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr/>
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr/>
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="row rounded p-1" Style="background: #b8b0c1;">
-        <div className="col-sm-4 text-center"><a href="#" className=""><img Style="max-width: -webkit-fill-available; height: 130px; width: 130px;"className="img-responsive rounded-circle" src="/img/sofia.jpg" alt=""/></a>
-        </div>
-        <div className="col-sm-8">
-          <div className="row">
-            <div className="col-sm-6">
-                <h3 className="title">Sofia Milagros</h3>
-                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                <p>Tu nueva Mascota! </p>
-            </div>
-            <div className="col-sm-6 text-center mt-4">
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/favorito.png" alt=""/></button>&nbsp;&nbsp;&nbsp;
-                <button type="button" className="btn btn-outline-danger buttonBackground"><img Style="width: 27px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-    </div>
-  </div>
-</div>
-
-<div className="d-lg-none d-md-none d-xs-none  d-sm-block">
-
-<nav className="mobile-bottom-nav">
-	<div className="mobile-bottom-nav__item mobile-bottom-nav__item--active">
-			<HomeIcon />
-	</div>
-	<div className="mobile-bottom-nav__item">		
-    <PetsIcon />
-	</div>
-	<div className="mobile-bottom-nav__item">
-    <ChatIcon />
-	</div>
-	
-	<div className="mobile-bottom-nav__item">
-    <AccountCircleIcon />
-	</div>
-</nav>
-
-</div>
-
-       </div>
        
 
         )
