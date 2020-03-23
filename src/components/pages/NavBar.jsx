@@ -5,7 +5,7 @@ class NavBar extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="d-none d-md-none d-lg-block">
                 <div className="header">
                     <div className="container-fluid h-100 d-flex">
                         <div className="ml-auto">

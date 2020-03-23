@@ -8,7 +8,7 @@ class Dashboard extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="container">
                 <NavBar />
                 {/* <Filtering /> */}
                 <CardInfoDogs />

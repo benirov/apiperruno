@@ -1,174 +1,111 @@
 import React, { Fragment } from 'react';
-// import '../Styles/CardInfoDogs.scss'; 
+import '../Styles/CardInfoDogs.scss'; 
 // import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 // import ChatIcon from '@material-ui/icons/Chat';
 // import PetsIcon from '@material-ui/icons/Pets';
 // import HomeIcon from '@material-ui/icons/Home';
-// import PageviewIcon from '@material-ui/icons/Pageview';
-import { MDBCard, MDBCardBody, MDBBtn, MDBIcon, MDBRow, MDBCol, MDBCardTitle, MDBCardText, MDBCardHeader, MDBContainer } from "mdbreact";
-
+// import PageviewIcon from '@material-ui/icons/Pageview'; 
+import { MDBCard, MDBCardBody, MDBBtn, MDBIcon, MDBRow, MDBCol,MDBCardImage,  MDBCardTitle, MDBCardText, MDBCardHeader, MDBContainer } from "mdbreact";
 class CardInfoDogs extends React.Component { 
 
     render(){
         return(
             <div>
-              <MDBContainer size="sm">
-              <div class="row">
-                <MDBCard  style={{ marginTop: "1rem" }}>
-                  <div className="row" style={{ marginTop: "1rem" }}>
-                      <div className="col-12 col-md-6" >
-                        <span style={{ margin: "1rem" }}> Ultimas mascotas agregadas segun tus gustos</span>
-                      </div>
-                      <div className="col-12 col-md-6 text-right" Style="padding-right: 22px; cursor:pointer;">
-                          <p className="badge badge-pill badge-primary"><strong> Ver Mas <i class="far fa-arrow-alt-circle-right"></i></strong></p>
-                      </div>
+              <MDBContainer>
+                <div className="row mt-5">
+                  <div className="col-12">
+                      <h3 className="h3 color2 text-center"><strong>Hola, Beniro</strong></h3>
+                      <p className="fontIndie h3 color2 text-center">Bienvenido de vuelta</p> 
                   </div>
-                  <MDBCardBody>
-                  <MDBRow>
-                    <MDBCol>
-                    <MDBCard>
-                    <div className="row" Style="margin-top: 5px;">
-                      <div className="col-3" Style="padding-left: 21px;">
-                        <div className="label">
-                          <img
-                            src="/img/sofia.jpg"
-                            alt=""
-                            className="rounded-circle z-depth-1-half"
-                            Style="height: 78px; width: 78px;"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-9">
-                        <a href="#!" className="name">
-                          Sofia Milagros
-                        </a>
-                        <br/>
-                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                        <div className="added-text">
-                          ¡ Tu Nueva Macota !
-                        </div>
-                        <div className="">
-                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>  
-                    </MDBCard>
-                    </MDBCol>
-                    <MDBCol>
-                    <MDBCard>
-                    <div className="row" Style="margin-top: 5px;">
-                      <div className="col-3" Style="padding-left: 21px;">
-                        <div className="label">
-                          <img
-                            src="/img/sofia.jpg"
-                            alt=""
-                            className="rounded-circle z-depth-1-half"
-                            Style="height: 78px; width: 78px;"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-9">
-                        <a href="#!" className="name">
-                          Sofia Milagros
-                        </a>
-                        <br/>
-                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                        <div className="added-text">
-                          ¡ Tu Nueva Macota !
-                        </div>
-                        <div className="">
-                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>  
-                    </MDBCard>
-                    </MDBCol>
-                    <MDBCol>
-                    <MDBCard>
-                    <div className="row" Style="margin-top: 5px;">
-                      <div className="col-3" Style="padding-left: 21px;">
-                        <div className="label">
-                          <img
-                            src="/img/sofia.jpg"
-                            alt=""
-                            className="rounded-circle z-depth-1-half"
-                            Style="height: 78px; width: 78px;"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-9">
-                        <a href="#!" className="name">
-                          Sofia Milagros
-                        </a>
-                        <br/>
-                        <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
-                        <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
-                        <div className="added-text">
-                          ¡ Tu Nueva Macota !
-                        </div>
-                        <div className="">
-                          <div className="col-12 text-right" Style="margin-bottom: 5px;">
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/dog-favoritos.png" alt=""/></span>&nbsp;&nbsp;&nbsp; 
-                            <span className="badge badge-pill" Style="padding: 10px; cursor:pointer;"><img Style="width: 23px;" className="imgFavoritos" src="/img/detailDog.png" alt=""/></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>  
-                    </MDBCard>
-                    </MDBCol>
-                  </MDBRow>
-                    
-                    {/* <MDBCardText>
-                      With supporting text below as a natural lead-in to additional
-                      content.
-                    </MDBCardText>
-                    <MDBBtn color="deep-orange">go somewhere</MDBBtn> */}
-                  </MDBCardBody>
-                </MDBCard>
                 </div>
-              </MDBContainer>
-              <MDBContainer size="sm">
-              <div className="row">
-                  <MDBCard  style={{ marginTop: "1rem" }} className="col-4">
-                  <div className="row" style={{ marginTop: "1rem" }}>
-                      <div className="col-12 col-md-8" >
-                        <span style={{ margin: "1rem" }}> Top Razas mas Visitadas</span>
-                      </div>
-                      <div className="col-12 col-md-4 text-right" Style="padding-right: 22px; cursor:pointer;">
-                          <p className="badge badge-pill badge-primary"><strong> Ver Mas <i className="far fa-arrow-alt-circle-right"></i></strong></p>
-                      </div>
-                  </div>
-                  <div className="row">
-                    <ul className="col-12">
-                        <li className="list-group-item">
-                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/icons8-pug-96.png" alt=""/> Pug&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;4 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
-                        </li>
-                        <li className="list-group-item">
-                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/raza2.png" alt=""/>Beauceron&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;34 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
-                        </li>
-                        <li className="list-group-item">
-                          <div className="md-v-line"></div><img Style="width: 23px;" className="imgFavoritos" src="/img/akita.jpg" alt=""/>Akita Japonés&nbsp;&nbsp; <span className="badge badge-light">&nbsp;&nbsp;43 Mascotas</span>&nbsp;&nbsp;<p className="badge badge-pill badge-primary"><strong> Ver <i className="far fa-arrow-alt-circle-right"></i></strong></p>
-                        </li>
-                    </ul>
+                </MDBContainer>
+                    <div class="row mt-3">
+                        <div class="growing-search">
+                          <div class="input">
+                            <input type="text" name="search"/>
+                          </div><div class="submit">
+                            <button type="submit" name="go_search">
+                              <span class="fa fa-search"></span>
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                    <MDBContainer className="mt-5">
+                          <div className="row">
+                            <span className="h5 color2"><strong>Last Recent</strong></span> 
+                          </div>
+                          
+                    </MDBContainer>
+                    <MDBContainer className="mt-3">
+                        <div className="card">
+                            <div className="image">
+                              <img src="/img/sofia.jpg"/>
+                            </div>
+                            <div className="text">
+                                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                                <div className="row">
+                                  <span className="h5 mt-2 color2"><strong>Sofia Milagros</strong></span> 
+                                </div>
+                                <div className="row color2">
+                                  <label>¡ Tu Nueva Macota !</label>
+                                </div>
+                            </div>
+                          </div>
 
-                  </div>
-                  </MDBCard>
-                  <MDBCard  style={{ marginTop: "1rem" }} className="col-8">
-                    dcsdc
-                  </MDBCard>
-                </div>
-              </MDBContainer>
+                          <div className="card">
+                            <div className="image">
+                              <img src="/img/sofia.jpg"/>
+                            </div>
+                            <div className="text">
+                                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                                <div className="row">
+                                  <span className="h5 mt-2 color2"><strong>Sofia Milagros</strong></span> 
+                                </div>
+                                <div className="row color2">
+                                  <label>¡ Tu Nueva Macota !</label>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="image">
+                              <img src="/img/sofia.jpg"/>
+                            </div>
+                            <div className="text">
+                                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                                <div className="row">
+                                  <span className="h5 mt-2 color2"><strong>Sofia Milagros</strong></span> 
+                                </div>
+                                <div className="row color2">
+                                  <label>¡ Tu Nueva Macota !</label>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="image">
+                              <img src="/img/sofia.jpg"/>
+                            </div>
+                            <div className="text">
+                                <span className="badge badge-pill badge-primary">Pug</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">12 Meses</span>&nbsp;
+                                <span className="badge badge-pill badge-primary">Todas las vacunas</span>&nbsp;
+                                <div className="row">
+                                  <span className="h5 mt-2 color2"><strong>Sofia Milagros</strong></span> 
+                                </div>
+                                <div className="row color2">
+                                  <label>¡ Tu Nueva Macota !</label>
+                                </div>
+                            </div>
+                          </div>
+                          
+                    </MDBContainer>
           </div>
        
 

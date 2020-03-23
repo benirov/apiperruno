@@ -51,3 +51,313 @@
 .buttonBackground{
     border-color: darkblue;
 }
+
+*{transition: all .3s ease-in;}
+body{ background-color: #a5c5e2; font-family: Helvetica; color: #fff; display: flex; flex-flow: column nowrap; align-items: center;}
+
+.indication{
+  width: 260px;
+  text-align:  center;
+  margin: 1em auto 3em;
+  border-bottom: 3px solid #fff;
+}
+
+.frame{
+  width: 300px;
+  height: 450px;
+  background-color: #ffffff;
+  margin-bottom: 5em;
+}
+
+.header-background{
+  width: 100%;
+  height: 100%;
+  background-color: #c5d4de;
+  
+  &.active{
+    background-color: #edf3f6;
+  }
+  
+  .menu{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    
+    &.active{
+      width: 100%;
+      height: 35px;
+      border-radius: 0px;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  .profile-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #edf3f6;
+    position: relative;
+    top: 18px;
+    left: 110px;
+    
+    &.active{
+      width: 50px;
+      height: 50px;
+      top: 85px;
+      left: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+.cards-container{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+  
+  &.active{
+    width: 90%;
+    height: 35%;
+    border-radius: 4px;
+    
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+  .cards-content{
+    padding: 3em 1.5em;
+    
+    &.active{
+      padding-top: 2.5em;
+    }
+  }
+ 
+  
+  .bars.active{
+    margin-left: 90px;
+  }
+   
+  .bar-one{
+    width: 150px;
+    height: 20px;
+    background-color: #edf3f6;
+    
+    &.active{
+      width: 90px;
+      height: 15px;
+    }
+  }
+  
+  .bar-two{
+    @extend .bar-one;
+    width: 200px;
+    margin: 1em 0;
+    
+    &.active{
+      width: 130px;
+      height: 15px;
+    }
+  }
+  
+  .card-box{
+    @extend .bar-two;
+    width: 100%;
+    height: 200px;
+    margin: 1em auto;
+  }
+  
+  .card-one.active{
+    width: 100%;
+    height: 30px;
+  }
+  
+  .card-two.active{
+    visibility: hidden;
+  }
+ }
+
+.card {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  margin: 7px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: all .2s ease-in-out;
+  width: 85%;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.card:hover {
+  /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 54px;
+}
+
+.image {
+  height: 120px;
+  opacity: .7;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.image > img {
+  height: inherit;
+  width: 100%;
+}
+
+.image:hover,
+.card:hover .image {
+  height: 200px;
+  opacity: 1;
+}
+
+.text {
+  background: #FFF;
+  padding: 20px;
+  min-height: 128px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.text p {
+  margin-bottom: 0px;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -50px;
+  right: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #0066A2;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+.fab:hover {
+  background: #549D3C;
+  cursor: pointer;
+  -ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+
+.containerprincial{
+  width: 30em;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+ /* General Styles */		
+ center > h4 { color: #00a0d1; margin-top: 50px; }
+ body { margin: 0; font-family: Arial; background-color: #3498db; }
+ ul#growing-search-freebie { display: table; list-style: none; margin: 150px auto 0 auto; padding: 0; }
+ ul#growing-search-freebie > li { float: left; margin-right: 20px; margin-bottom: 20px; padding: 10px 10px; }
+ ul#growing-search-freebie > li:last-child { margin-right: 0; }
+ ul#growing-search-freebie > li > span { margin-bottom: 10px; }
+ 
+ 
+ /* STYLES */
+ /*
+ * Freebie from PixelsDaily
+ * (www.pixelsdaily.com)
+ *
+ * @freebie: growing-search
+ * @author: Francisco Neves (@fntneves)
+ * @website: www.francisconeves.com
+ */
+ 
+ .growing-search {
+ padding: 5px 5px 5px 7px;
+ border-radius: 5px;
+ background: #fff;
+ width: 66%;
+ margin: auto;
+ }
+ 
+ .growing-search div {
+ display: inline-block;
+ }
+ 
+ .growing-search .input input {
+ margin-right: 0;
+ border: none;
+ transition: width 200ms;
+ padding-top: 5px;
+ padding-left: 5px;
+ padding-bottom: 5px;
+ width: 100%;
+ border-bottom: 1px solid #eee;
+ }
+ 
+ .growing-search .input input:focus {
+ width: 150px;
+ }
+ 
+ .growing-search .submit button {
+ margin-left: 0;
+ border: none;
+ font-size: 1.15em;
+ color: #aaa;
+ background-color: #fff;
+ padding-top: 2px;
+ padding-bottom: 2px;
+ transition: color 200ms;
+ }
+ 
+ .growing-search .input input:hover, .growing-search .submit button:hover {
+ cursor: pointer;
+ width: 100%;
+ }
+ 
+ .growing-search .input input:focus, .growing-search .submit button:focus {
+ outline: none;
+ }
+ 
+ .submit{
+   border: 2px solid #481380!important;
+ background: #481380!important;
+ border-radius: 7px!important;
+ }
+
+ div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu div:hover {
+  background-color: #777;
+}
